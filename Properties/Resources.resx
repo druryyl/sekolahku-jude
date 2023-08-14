@@ -136,7 +136,13 @@
   <data name="icons8_school_building_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons8_school_building_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sekolahku-wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sekolahku-wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_sigma_481" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons8_sigma_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sekolahku-wallpaper2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sekolahku-wallpaper2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -16,6 +16,8 @@ namespace sekolahku_jude
         public UtamaForm()
         {
             InitializeComponent();
+            Controls.OfType<MdiClient>().FirstOrDefault().BackColor = Color.White;
+
         }
 
         private void ribbonButton3_Click(object sender, EventArgs e)

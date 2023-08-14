@@ -164,6 +164,8 @@
     <None Include="Assets\icons8_school_building_48.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sekolahku-wallpaper.jpg" />
+    <None Include="Resources\sekolahku-wallpaper2.jpg" />
     <Content Include="ScriptTable\Kelas.sql" />
     <Content Include="ScriptTable\Mapel.sql" />
   </ItemGroup>
