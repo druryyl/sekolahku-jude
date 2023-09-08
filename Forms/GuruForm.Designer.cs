@@ -37,13 +37,19 @@
             this.SaveButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.NewButton = new System.Windows.Forms.Button();
+            this.PhotoPic = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhotoPic)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Cornsilk;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.PhotoPic);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox1);
@@ -126,6 +132,27 @@
             this.NewButton.UseVisualStyleBackColor = true;
             this.NewButton.Click += new System.EventHandler(this.NewButton_Click);
             // 
+            // PhotoPic
+            // 
+            this.PhotoPic.Location = new System.Drawing.Point(25, 115);
+            this.PhotoPic.Name = "PhotoPic";
+            this.PhotoPic.Size = new System.Drawing.Size(180, 172);
+            this.PhotoPic.TabIndex = 4;
+            this.PhotoPic.TabStop = false;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 290);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "label3";
+            // 
             // GuruForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +170,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhotoPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -158,5 +186,8 @@
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button NewButton;
+        private System.Windows.Forms.PictureBox PhotoPic;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label3;
     }
 }

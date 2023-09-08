@@ -43,5 +43,13 @@ namespace sekolahku_jude
             form.MdiParent = this;
             form.Show();
         }
+
+        private void LayoutButton_Click(object sender, EventArgs e)
+        {
+            var form = new LayoutForm();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

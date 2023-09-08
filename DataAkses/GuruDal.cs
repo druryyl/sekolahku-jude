@@ -24,14 +24,15 @@ namespace sekolahku_jude.DataAkses
         {
             //  QUERY
             const string sql = @"
-                INSERT INTO Guru(GuruId, GuruName)
-                VALUES (@GuruId, @GuruName)";
+                INSERT INTO Guru(GuruId, GuruName, PHoto)
+                VALUES (@GuruId, @GuruName, @Photo)";
 
             //  PARAM
             var dp = new DynamicParameters();
             dp.AddParam("@GuruId", model.GuruId, System.Data.SqlDbType.VarChar);
             dp.AddParam("@GuruName", model.GuruName, System.Data.SqlDbType.VarChar);
-            
+            dp.AddParam("@Photo", model.Photo, System.Data.SqlDbType.VarChar);
+
             //  EXECUTE
             using (var conn = new SqlConnection(_connString))
             {
@@ -46,7 +47,8 @@ namespace sekolahku_jude.DataAkses
                 UPDATE
                     Guru
                 SET
-                    GuruName = @GuruName
+                    GuruName = @GuruName,
+                    Photo = @Photo
                 WHERE
                     GuruId = @GuruId ";
 
@@ -54,6 +56,7 @@ namespace sekolahku_jude.DataAkses
             var dp = new DynamicParameters();
             dp.AddParam("@GuruId", model.GuruId, System.Data.SqlDbType.VarChar);
             dp.AddParam("@GuruName", model.GuruName, System.Data.SqlDbType.VarChar);
+            dp.AddParam("@Photo", model.Photo, System.Data.SqlDbType.VarChar);
 
             //  EXECUTE
             using (var conn = new SqlConnection(_connString))
@@ -84,7 +87,7 @@ namespace sekolahku_jude.DataAkses
         {
             //  QUERY
             const string sql = @"
-                SELECT  GuruId, GuruName
+                SELECT  GuruId, GuruName, Photo
                 FROM    Guru
                 WHERE   GuruId = @GuruId ";
 
@@ -103,7 +106,7 @@ namespace sekolahku_jude.DataAkses
         {
             //  QUERY
             const string sql = @"
-                SELECT  GuruId, GuruName
+                SELECT  GuruId, GuruName, Photo
                 FROM    Guru ";
 
             //  EXECUTE

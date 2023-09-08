@@ -10,5 +10,6 @@ namespace sekolahku_jude.Models
     {
         public string GuruId { get; set; }
         public string GuruName { get; set; }
+        public string Photo { get; set; }
     }
 }
