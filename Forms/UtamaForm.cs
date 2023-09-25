@@ -46,7 +46,7 @@ namespace sekolahku_jude
 
         private void LayoutButton_Click(object sender, EventArgs e)
         {
-            var form = new JadwalForm();
+            var form = new ListDokter();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.MdiParent = this;
             form.Show();

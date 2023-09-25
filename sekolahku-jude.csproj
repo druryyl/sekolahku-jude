@@ -84,11 +84,11 @@
     <Compile Include="Forms\GuruForm.Designer.cs">
       <DependentUpon>GuruForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\JadwalForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Forms\JadwalUserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\JadwalForm.Designer.cs">
-      <DependentUpon>JadwalForm.cs</DependentUpon>
+    <Compile Include="Forms\JadwalUserControl.Designer.cs">
+      <DependentUpon>JadwalUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\KelasForm.cs">
       <SubType>Form</SubType>
@@ -102,11 +102,23 @@
     <Compile Include="Forms\LayoutForm.Designer.cs">
       <DependentUpon>LayoutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ListDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListDokter.Designer.cs">
+      <DependentUpon>ListDokter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MapelForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MapelForm.Designer.cs">
       <DependentUpon>MapelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PilihanDokterUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PilihanDokterUserControl.Designer.cs">
+      <DependentUpon>PilihanDokterUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UtamaForm.cs">
       <SubType>Form</SubType>
@@ -126,8 +138,8 @@
     <EmbeddedResource Include="Forms\GuruForm.resx">
       <DependentUpon>GuruForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\JadwalForm.resx">
-      <DependentUpon>JadwalForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\JadwalUserControl.resx">
+      <DependentUpon>JadwalUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\KelasForm.resx">
       <DependentUpon>KelasForm.cs</DependentUpon>
@@ -135,8 +147,14 @@
     <EmbeddedResource Include="Forms\LayoutForm.resx">
       <DependentUpon>LayoutForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListDokter.resx">
+      <DependentUpon>ListDokter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MapelForm.resx">
       <DependentUpon>MapelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PilihanDokterUserControl.resx">
+      <DependentUpon>PilihanDokterUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UtamaForm.resx">
       <DependentUpon>UtamaForm.cs</DependentUpon>
