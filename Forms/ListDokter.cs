@@ -72,15 +72,21 @@ namespace sekolahku_jude.Forms
                     Umum = data?.Umum ?? 0,
                     Visible = true,
                 };
+                newControl.OnCheckBoxCheckedChanged += NewControl_OnCheckBoxCheckedChanged;
 
                 JadwalFlowPanel.Controls.Add(newControl);
             }
+        }
+
+        private void NewControl_OnCheckBoxCheckedChanged(object sender, EventArgs e)
+        {
+            var jadwal = (JadwalUserControl)sender;
+            MessageBox.Show(jadwal.Tgl.ToString("dd-MMM-yyyy"));
         }
     }
 
     public class JadwalModel
     {
-
         public string DokterName { get; set; }
 
         public JadwalModel(string dokterName, DateTime tgl, int umum, int bpjs)

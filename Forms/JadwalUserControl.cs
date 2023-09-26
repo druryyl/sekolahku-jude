@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace sekolahku_jude.Forms
 {
@@ -15,7 +16,8 @@ namespace sekolahku_jude.Forms
         private DateTime _tgl;
         private int _umum;
         private int _bpjs;
-        
+        public event EventHandler OnCheckBoxCheckedChanged;
+
         public DateTime Tgl 
         { 
             get => _tgl;
@@ -50,6 +52,15 @@ namespace sekolahku_jude.Forms
         public JadwalUserControl()
         {
             InitializeComponent();
+            PIlihCheckbox.CheckedChanged += (sender, eventArg) =>
+            {
+                OnMyCheckBoxCheckedChanged(EventArgs.Empty);
+            };
+        }
+
+        protected virtual void OnMyCheckBoxCheckedChanged(EventArgs e)
+        {
+            OnCheckBoxCheckedChanged?.Invoke(this, e);
         }
     }
 }
