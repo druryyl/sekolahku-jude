@@ -72,6 +72,7 @@
     <Compile Include="DataAkses\JadwalDal.cs" />
     <Compile Include="DataAkses\KelasDal.cs" />
     <Compile Include="DataAkses\MapelDal.cs" />
+    <Compile Include="DataAkses\NilaiSiswaDal.cs" />
     <Compile Include="Forms\BrowseData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +119,7 @@
     <Compile Include="Models\JadwalModel.cs" />
     <Compile Include="Models\KelasModel.cs" />
     <Compile Include="Models\MapelModel.cs" />
+    <Compile Include="Models\NilaiSiswaModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BrowseData.resx">
@@ -184,6 +186,7 @@
     <None Include="Assets\icons8_school_building_48.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ScriptTable\NilaiSiswa.sql" />
     <None Include="Resources\sekolahku-wallpaper.jpg" />
     <None Include="Resources\sekolahku-wallpaper2.jpg" />
     <Content Include="ScriptTable\Jadwal.sql" />
