@@ -1,4 +1,5 @@
-﻿using sekolahku_jude.Forms;
+﻿using sekolahku_jude.DesignFormAskep;
+using sekolahku_jude.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,7 @@ namespace sekolahku_jude
 
         private void LayoutButton_Click(object sender, EventArgs e)
         {
-            var form = new ListDokter();
+            var form = new ImplementasiForm();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.MdiParent = this;
             form.Show();

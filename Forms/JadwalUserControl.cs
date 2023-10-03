@@ -27,6 +27,7 @@ namespace sekolahku_jude.Forms
                 TglLabel.Text = _tgl.ToString("ddd, dd MMM yyyy");
             }
         }
+
         public int Umum
         {
             get => _umum;

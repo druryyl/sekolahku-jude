@@ -72,6 +72,12 @@
     <Compile Include="DataAkses\JadwalDal.cs" />
     <Compile Include="DataAkses\KelasDal.cs" />
     <Compile Include="DataAkses\MapelDal.cs" />
+    <Compile Include="DesignFormAskep\ImplementasiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignFormAskep\ImplementasiForm.Designer.cs">
+      <DependentUpon>ImplementasiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BrowseData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,12 @@
     <Compile Include="Forms\MapelForm.Designer.cs">
       <DependentUpon>MapelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PanelFormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PanelFormTest.Designer.cs">
+      <DependentUpon>PanelFormTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PilihanDokterUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +144,9 @@
     <Compile Include="Models\MapelModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DesignFormAskep\ImplementasiForm.resx">
+      <DependentUpon>ImplementasiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BrowseData.resx">
       <DependentUpon>BrowseData.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MapelForm.resx">
       <DependentUpon>MapelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PanelFormTest.resx">
+      <DependentUpon>PanelFormTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PilihanDokterUserControl.resx">
       <DependentUpon>PilihanDokterUserControl.cs</DependentUpon>
