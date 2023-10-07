@@ -31,7 +31,8 @@ namespace sekolahku_jude
 
         private void ribbonButton4_Click(object sender, EventArgs e)
         {
-            var form = new MapelForm();
+            //var form = new MapelForm();
+            var form = new ImplementasiV2Form();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.MdiParent = this;
             form.Show();
