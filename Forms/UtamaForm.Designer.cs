@@ -36,8 +36,9 @@
             this.ribbonButton1 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
-            this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
             this.LayoutButton = new System.Windows.Forms.RibbonButton();
+            this.ChartButton = new System.Windows.Forms.RibbonButton();
+            this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
             this.SuspendLayout();
             // 
             // ribbon1
@@ -74,6 +75,7 @@
             this.ribbonPanel1.Items.Add(this.ribbonButton2);
             this.ribbonPanel1.Items.Add(this.ribbonButton4);
             this.ribbonPanel1.Items.Add(this.LayoutButton);
+            this.ribbonPanel1.Items.Add(this.ChartButton);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Text = "Master";
             // 
@@ -112,11 +114,6 @@
             this.ribbonButton4.Text = "MaPel";
             this.ribbonButton4.Click += new System.EventHandler(this.ribbonButton4_Click);
             // 
-            // ribbonTab2
-            // 
-            this.ribbonTab2.Name = "ribbonTab2";
-            this.ribbonTab2.Text = null;
-            // 
             // LayoutButton
             // 
             this.LayoutButton.Image = global::sekolahku_jude.Properties.Resources.icons8_sigma_48;
@@ -125,6 +122,20 @@
             this.LayoutButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("LayoutButton.SmallImage")));
             this.LayoutButton.Text = "Layout";
             this.LayoutButton.Click += new System.EventHandler(this.LayoutButton_Click);
+            // 
+            // ChartButton
+            // 
+            this.ChartButton.Image = global::sekolahku_jude.Properties.Resources.icons8_vue_js_32;
+            this.ChartButton.LargeImage = global::sekolahku_jude.Properties.Resources.icons8_vue_js_32;
+            this.ChartButton.Name = "ChartButton";
+            this.ChartButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("ChartButton.SmallImage")));
+            this.ChartButton.Text = "Chart";
+            this.ChartButton.Click += new System.EventHandler(this.ChartButton_Click);
+            // 
+            // ribbonTab2
+            // 
+            this.ribbonTab2.Name = "ribbonTab2";
+            this.ribbonTab2.Text = null;
             // 
             // UtamaForm
             // 
@@ -140,6 +151,7 @@
             this.Name = "UtamaForm";
             this.Text = "SekolahKu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UtamaForm_FormClosing);
             this.ResumeLayout(false);
 
         }
@@ -157,6 +169,7 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel3;
         private System.Windows.Forms.RibbonButton ribbonButton4;
         private System.Windows.Forms.RibbonButton LayoutButton;
+        private System.Windows.Forms.RibbonButton ChartButton;
     }
 }
 

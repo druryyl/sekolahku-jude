@@ -18,7 +18,6 @@ namespace sekolahku_jude
         {
             InitializeComponent();
             Controls.OfType<MdiClient>().FirstOrDefault().BackColor = Color.White;
-
         }
 
         private void ribbonButton3_Click(object sender, EventArgs e)
@@ -52,6 +51,18 @@ namespace sekolahku_jude
             form.StartPosition = FormStartPosition.CenterScreen;
             form.MdiParent = this;
             form.Show();
+        }
+
+        private void ChartButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UtamaForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var msgBoxResult = MessageBox.Show("Quit?", "", MessageBoxButtons.YesNo);
+            if (msgBoxResult == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

@@ -91,21 +91,23 @@
             this.label6 = new System.Windows.Forms.Label();
             this.InsightGrid = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label49 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label46 = new System.Windows.Forms.Label();
             this.IntervensiCombo = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.RenpraPanel = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label46 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.TindakanGrid = new System.Windows.Forms.DataGridView();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.RenpraPanel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.TimeboxPanel.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
             this.flowLayoutPanel11.SuspendLayout();
@@ -122,10 +124,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.InsightGrid)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.RenpraPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TindakanGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.RenpraPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -778,25 +780,29 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label49);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label46);
-            this.panel1.Controls.Add(this.IntervensiCombo);
-            this.panel1.Controls.Add(this.TindakanGrid);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Location = new System.Drawing.Point(920, 130);
+            this.panel1.Location = new System.Drawing.Point(920, 389);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(425, 541);
+            this.panel1.Size = new System.Drawing.Size(425, 285);
             this.panel1.TabIndex = 5;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightPink;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(342, 22);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 38;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 321);
+            this.pictureBox2.Location = new System.Drawing.Point(6, 49);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(411, 215);
+            this.pictureBox2.Size = new System.Drawing.Size(411, 230);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
@@ -805,7 +811,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(3, 278);
+            this.label49.Location = new System.Drawing.Point(3, 6);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(82, 13);
             this.label49.TabIndex = 36;
@@ -828,22 +834,11 @@
             "[PAIN-SCALE] McGill Pain Questionnaire (MPQ)",
             "[PAIN-SCALE] Visual Analog Scale (VAS)",
             ""});
-            this.comboBox1.Location = new System.Drawing.Point(6, 294);
+            this.comboBox1.Location = new System.Drawing.Point(6, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(330, 21);
             this.comboBox1.TabIndex = 35;
             this.comboBox1.Text = "[CRITICAL] Vital Sign";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(319, 7);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(100, 13);
-            this.label46.TabIndex = 34;
-            this.label46.Text = "IMPL-23A-00031A";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // IntervensiCombo
             // 
@@ -852,59 +847,11 @@
             "Intervensi: Penyapihan Ventilasi Mekanik",
             "Intervensi: Perawatan Trakheostomi",
             "Intervensi: Dukungan Kepatuhan Program Pengobatan"});
-            this.IntervensiCombo.Location = new System.Drawing.Point(6, 34);
+            this.IntervensiCombo.Location = new System.Drawing.Point(6, 95);
             this.IntervensiCombo.Name = "IntervensiCombo";
-            this.IntervensiCombo.Size = new System.Drawing.Size(413, 21);
+            this.IntervensiCombo.Size = new System.Drawing.Size(410, 21);
             this.IntervensiCombo.TabIndex = 33;
             this.IntervensiCombo.Text = "Intervensi: Penyapihan Ventilasi Mekanik";
-            // 
-            // TindakanGrid
-            // 
-            this.TindakanGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TindakanGrid.Location = new System.Drawing.Point(6, 61);
-            this.TindakanGrid.Name = "TindakanGrid";
-            this.TindakanGrid.Size = new System.Drawing.Size(411, 141);
-            this.TindakanGrid.TabIndex = 32;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.SeaGreen;
-            this.pictureBox3.Location = new System.Drawing.Point(383, 208);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 30);
-            this.pictureBox3.TabIndex = 29;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LightCoral;
-            this.pictureBox1.Location = new System.Drawing.Point(383, 241);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 31);
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(6, 208);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(370, 64);
-            this.textBox3.TabIndex = 27;
-            this.textBox3.Text = "[Respon Klien]\r\n\r\nIdentifikasi indikasi dilakukan latihan pernapasan. Pancasila K" +
-    "etuhanan Yang Maha Esa. Kemanusiaan Yang Adil Dan Beradab";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "ddd, dd-MMM-yyyy HH:mm";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(6, 6);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(148, 22);
-            this.dateTimePicker1.TabIndex = 16;
             // 
             // comboBox2
             // 
@@ -915,52 +862,135 @@
             "[Order] Lab Gula Darah Lengkap",
             "[Order] Monitoring Vital Sign",
             "[Order] Pasang Infus"});
-            this.comboBox2.Location = new System.Drawing.Point(3, 23);
+            this.comboBox2.Location = new System.Drawing.Point(6, 33);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(414, 21);
+            this.comboBox2.Size = new System.Drawing.Size(410, 21);
             this.comboBox2.TabIndex = 6;
             this.comboBox2.Text = "Renpra-1: Bersihan Jalan Nafas Tidak Efektif";
             // 
             // label47
             // 
-            this.label47.Location = new System.Drawing.Point(3, 47);
+            this.label47.Location = new System.Drawing.Point(5, 57);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(414, 30);
+            this.label47.Size = new System.Drawing.Size(414, 29);
             this.label47.TabIndex = 7;
             this.label47.Text = "b.d ● Hipersekresi jalan napas ● respons alergi d.d ● tidak mampu batuk, ● sputum" +
     " berlebih ● Bunyi napas menurun";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(3, 7);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(107, 13);
-            this.label48.TabIndex = 12;
-            this.label48.Text = "Renpra: 2    Order:3";
             // 
             // RenpraPanel
             // 
             this.RenpraPanel.BackColor = System.Drawing.Color.LavenderBlush;
             this.RenpraPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RenpraPanel.Controls.Add(this.label48);
+            this.RenpraPanel.Controls.Add(this.button5);
+            this.RenpraPanel.Controls.Add(this.TindakanGrid);
+            this.RenpraPanel.Controls.Add(this.pictureBox3);
+            this.RenpraPanel.Controls.Add(this.pictureBox1);
+            this.RenpraPanel.Controls.Add(this.textBox3);
+            this.RenpraPanel.Controls.Add(this.label46);
+            this.RenpraPanel.Controls.Add(this.dateTimePicker1);
             this.RenpraPanel.Controls.Add(this.label47);
+            this.RenpraPanel.Controls.Add(this.IntervensiCombo);
             this.RenpraPanel.Controls.Add(this.comboBox2);
-            this.RenpraPanel.Location = new System.Drawing.Point(920, 35);
+            this.RenpraPanel.Location = new System.Drawing.Point(920, 36);
             this.RenpraPanel.Name = "RenpraPanel";
-            this.RenpraPanel.Size = new System.Drawing.Size(424, 92);
+            this.RenpraPanel.Size = new System.Drawing.Size(424, 347);
             this.RenpraPanel.TabIndex = 4;
+            this.RenpraPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.RenpraPanel_Paint);
             // 
-            // button3
+            // dateTimePicker1
             // 
-            this.button3.BackColor = System.Drawing.Color.LightPink;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(342, 294);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 38;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
+            this.dateTimePicker1.CustomFormat = "ddd, dd-MMM-yyyy HH:mm";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(6, 5);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(148, 22);
+            this.dateTimePicker1.TabIndex = 17;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(319, 11);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(100, 13);
+            this.label46.TabIndex = 35;
+            this.label46.Text = "IMPL-23A-00031A";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.LightPink;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(920, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(96, 23);
+            this.button4.TabIndex = 39;
+            this.button4.Text = "New By Renpra";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // TindakanGrid
+            // 
+            this.TindakanGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TindakanGrid.Location = new System.Drawing.Point(6, 122);
+            this.TindakanGrid.Name = "TindakanGrid";
+            this.TindakanGrid.Size = new System.Drawing.Size(410, 115);
+            this.TindakanGrid.TabIndex = 43;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(359, 243);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(55, 22);
+            this.pictureBox3.TabIndex = 42;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightCoral;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(359, 269);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 22);
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(6, 243);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(347, 96);
+            this.textBox3.TabIndex = 40;
+            this.textBox3.Text = "[Respon Klien]\r\n\r\nIdentifikasi indikasi dilakukan latihan pernapasan. Pancasila K" +
+    "etuhanan Yang Maha Esa. Kemanusiaan Yang Adil Dan Beradab";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.LightPink;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(359, 311);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(55, 28);
+            this.button5.TabIndex = 44;
+            this.button5.Text = "Save";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.LightPink;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(1022, 6);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(96, 23);
+            this.button6.TabIndex = 40;
+            this.button6.Text = "New By Order";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // ImplementasiV2Form
             // 
@@ -968,11 +998,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleVioletRed;
             this.ClientSize = new System.Drawing.Size(1350, 681);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.RenpraPanel);
             this.Controls.Add(this.TimeboxPanel);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.InsightGrid);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ImplementasiV2Form";
@@ -995,11 +1027,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.RenpraPanel.ResumeLayout(false);
+            this.RenpraPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TindakanGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.RenpraPanel.ResumeLayout(false);
-            this.RenpraPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1067,20 +1099,22 @@
         private System.Windows.Forms.Label label35;
         private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl InsightGrid;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Panel RenpraPanel;
-        private System.Windows.Forms.DataGridView TindakanGrid;
         private System.Windows.Forms.ComboBox IntervensiCombo;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label46;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView TindakanGrid;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

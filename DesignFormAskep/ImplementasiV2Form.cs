@@ -136,6 +136,11 @@ namespace sekolahku_jude.DesignFormAskep
         {
 
         }
+
+        private void RenpraPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     public class InsightModel
